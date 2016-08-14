@@ -7,10 +7,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-//@RequestMapping("/hello")
 public class HelloController {
 
-	@RequestMapping(value="/index",method=RequestMethod.GET)
+	@RequestMapping(value="/hello",method=RequestMethod.GET)
 	public String index(ModelMap model)
 	{
 		model.addAttribute("modelMessage","index: Hello World ! - from Spring MVC");
@@ -20,9 +19,9 @@ public class HelloController {
 	@RequestMapping("/welcome")
 	public ModelAndView welcomeMethod()
 	{
-		ModelAndView model=new ModelAndView();
+		ModelAndView model=new ModelAndView("hello"); 
 		model.addObject("modelMessage","welcome: Hello World ! - from Spring MVC");
-		
+		model.addObject("modelObject", model.toString());
 		return model;
 	}
 }
