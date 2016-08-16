@@ -8,7 +8,18 @@
 </head>
 <body>
 <h3>Congratulations !!</h3>
-${status}
+<p>Details submitted by you </p>
+<p>
+<table>
+	<tr>
+		<td>Student Name :</td>
+		<td>${student.name}</td>
+	</tr>
+	<tr>
+		<td>Student Hobby :</td>
+		<td>${student.hobby }</td>
+	</tr>
+</table>
 </p>
 <hr/>
 Somsurya Nanda. Copyleft :P
