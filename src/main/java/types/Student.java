@@ -2,18 +2,18 @@ package types;
 
 public class Student {
 
-	private String name;
-	private String hobby;
-	public String getName() {
-		return name;
+	private String studentName;
+	private String studentHobby;
+	public String getStudentName() {
+		return studentName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
 	}
-	public String getHobby() {
-		return hobby;
+	public String getStudentHobby() {
+		return studentHobby;
 	}
-	public void setHobby(String hobby) {
-		this.hobby = hobby;
+	public void setStudentHobby(String studentHobby) {
+		this.studentHobby = studentHobby;
 	}
 }

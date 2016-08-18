@@ -13,11 +13,11 @@
 <table>
 	<tr>
 		<td>Student Name :</td>
-		<td>${student.name}</td>
+		<td>${student.studentName}</td>
 	</tr>
 	<tr>
 		<td>Student Hobby :</td>
-		<td>${student.hobby }</td>
+		<td>${student.studentHobby }</td>
 	</tr>
 </table>
 </p>
