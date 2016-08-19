@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import types.AdvancedStudent;
 import types.Student;
 
 @Controller
@@ -18,6 +19,7 @@ public class StudentAdmissionController {
 	public ModelAndView getAdmissionForm()
 	{
 		ModelAndView model=new ModelAndView("admission_form");
+		System.out.println("Handling Normal Student");
 		return model;
 	}
 	@RequestMapping(value="/submitAdmissionForm",method=RequestMethod.POST)
