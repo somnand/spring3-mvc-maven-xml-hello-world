@@ -9,6 +9,7 @@
 <body>
 <h3>Details of admission</h3>
 <table>
+<tr><td>Student</td></tr>
 <tr>
 <td>Student Name:</td>
 <td>${advancedStudent.studentName }</td>
@@ -16,6 +17,21 @@
 <tr>
 <td>Student Hobby:</td>
 <td>${advancedStudent.studentHobby }</td>
+</tr>
+<tr><td>Employee</td></tr>
+<tr>
+<td>Employee Name:</td>
+<td>${advancedEmployee.empName }</td>
+</tr>
+<tr>
+<td>Department:</td>
+<td>${advancedEmployee.department }</td>
+</tr>
+<td>Date of Birth:</td>
+<td>${advancedEmployee.dob }</td>
+</tr>
+<td>Skills of Employee:</td>
+<td>${advancedEmployee.skills }</td>
 </tr>
 </table>
 </body>

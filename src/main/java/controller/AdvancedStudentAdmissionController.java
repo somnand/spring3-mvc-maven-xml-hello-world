@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import types.AdvancedStudent;
-import types.Student;
+import types.Employee;
 @Controller
 public class AdvancedStudentAdmissionController{
 
@@ -27,10 +27,10 @@ public class AdvancedStudentAdmissionController{
 		return model;
 	}*/
 	@RequestMapping(value="/submitAdvancedAdmissionForm",method=RequestMethod.POST)
-	public ModelAndView submitAdvancedAdmissionForm(@ModelAttribute("advancedStudent") AdvancedStudent studentInMethod)
+	public ModelAndView submitAdvancedAdmissionForm(@ModelAttribute("advancedStudent") AdvancedStudent studentInMethod,@ModelAttribute("advancedEmployee") Employee employeeInMethod)
 	{
 		ModelAndView model=new ModelAndView("advanced_success");
-		
+		System.out.println(employeeInMethod);	
 		return model;
 	}
 	

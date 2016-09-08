@@ -8,6 +8,7 @@
 </head>
 <body>
 	<form action="submitAdvancedAdmissionForm" method="post">
+	Student :
 		<table>
 			<tr>
 				<td>Student Name :</td>
@@ -17,6 +18,33 @@
 				<td>Student Hobby :</td>
 				<td><input type="text" name="studentHobby" /></td>
 			</tr>
+			<!-- <tr>
+				<td><input type="submit" value="Submit the form >" /></td>
+			</tr> -->
+		</table>
+	Employee :
+		<table>
+			<tr>
+				<td>Employee Name :</td>
+				<td><input type="text" name="empName" /></td>
+			</tr>
+			<tr>
+				<td>Department :</td>
+				<td><input type="text" name="department" /></td>
+			</tr>
+			<tr>
+				<td>Date of Birth :</td>
+				<td><input type="text" name="dob" /></td>
+			</tr>
+			<tr>
+				<td>Skills :</td>
+				<td><select name="skills" multiple="multiple">
+					<option value="Java Core">Java Core</option>
+					<option value="Spring Core">Spring Core</option>
+					<option value="Spring Rest">Spring Rest</option>
+				</select></td>
+			</tr>
+			
 			<tr>
 				<td><input type="submit" value="Submit the form >" /></td>
 			</tr>
