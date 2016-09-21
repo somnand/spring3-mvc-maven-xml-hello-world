@@ -6,6 +6,7 @@
   <packaging>war</packaging>
   <properties>
   	<springframework.version>4.1.5.RELEASE</springframework.version>
+  	<servlet.version>3.1.0</servlet.version>
   </properties>
   <dependencies>
   	<dependency>
@@ -17,6 +18,12 @@
   		<groupId>org.springframework</groupId>
   		<artifactId>spring-web</artifactId>
   		<version>${springframework.version}</version>
+  	</dependency>
+  	<!-- Dependency for setting the Servlet Version -->
+  	<dependency>
+  		<groupId>javax.servlet</groupId>
+  		<artifactId>javax.servlet-api</artifactId>
+  		<version>${servlet.version}</version>
   	</dependency>
   	<dependency>
   		<groupId>org.springframework</groupId>
